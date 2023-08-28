@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Daisy and Tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Mobile Store</title>
+  </head>
+  <body>
+    <header>
+      <div class="container mx-auto">
+        <!-- Nav -->
+        <div class="navbar bg-base-100 mt-5">
+          <div class="flex-1">
+            <a
+              class="btn btn-ghost hover:bg-transparent normal-case text-2xl text-[#403F3F]"
+              >Hot Gadgets</a
+            >
+          </div>
+          <div class="flex-none">
+            <button class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white">
+              Sign Up
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="text-center flex flex-col gap-3 mt-10">
+          <h1 class="text-5xl font-bold">Apple Iphone 13 Pro Max</h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority <br />
+            have suffered alteration in some form, by injected humou.
+          </p>
+          <div>
+            <button class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white">
+              Buy Now
+            </button>
+          </div>
+
+          <!-- hero images -->
+          <div class="flex justify-center items-end mt-8">
+            <img src="./img/hero-phone.png" alt="" class="w-52" />
+            <img src="./img/hero-phone.png" alt="" class="w-72" />
+            <img src="./img/hero-phone.png" alt="" class="w-52" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main section -->
+    <main class="flex flex-col items-center justify-center mt-10">
+      <!-- Search box -->
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-semibold mb-5">Search your phone</h2>
+        <div class="form-control">
+          <label class="input-group">
+            <input
+              type="text"
+              placeholder="&#x1F50D; Search your phone"
+              class="input input-bordered"
+            />
+            <button class="btn btn-success">Search</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- boxes -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 text-center">
+        <!-- Mobile - 1 -->
+        <div class="border flex flex-col items-center max-w-xs p-2 gap-2">
+          <img src="./img/iphone-13.png" alt="">
+          <h2>Iphone 13 Pro Max</h2>
+          <p>There are many variations of passages of available, but the majority have suffered</p>
+          <p>$999</p>
+          <button class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white">
+            Show Details
+          </button>
+        </div>
+        <!-- Mobile - 2 -->
+        <div class="border flex flex-col items-center max-w-xs p-2 gap-2">
+          <img src="./img/iphone-13.png" alt="">
+          <h2>Iphone 13 Pro Max</h2>
+          <p>There are many variations of passages of available, but the majority have suffered</p>
+          <p>$999</p>
+          <button class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white">
+            Show Details
+          </button>
+        </div>
+        <!-- Mobile - 3 -->
+        <div class="border flex flex-col items-center max-w-xs p-2 gap-2">
+          <img src="./img/iphone-13.png" alt="">
+          <h2>Iphone 13 Pro Max</h2>
+          <p>There are many variations of passages of available, but the majority have suffered</p>
+          <p>$999</p>
+          <button class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white">
+            Show Details
+          </button>
+        </div>
+      </div>
+      <button class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white mt-4">
+        Show All
+      </button>
+    </main>
+
+    <footer>
+      <!-- footer top section -->
+      <div>
+<div>
+  <h1>Hot Gadgets</h1>
+  <p>You can definitely work.</p>
+</div>
+<div>
+  <button class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white">
+    Join Premium
+  </button>
+</div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
