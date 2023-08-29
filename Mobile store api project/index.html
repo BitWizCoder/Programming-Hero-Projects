@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../image/fav" type="image/x-icon" />
 
     <!-- Font Awesome -->
     <link
@@ -44,7 +44,7 @@
             </button>
           </div>
         </div>
-
+        <h1 class="text-center text-2xl font-bold text-red-300">Hello World!</h1>
         <!-- Hero Section -->
         <div class="text-center flex flex-col gap-3 mt-10">
           <h1 class="text-5xl font-bold">Apple Iphone 13 Pro Max</h1>
@@ -80,8 +80,12 @@
               type="text"
               placeholder="&#x1F50D; Search your phone"
               class="input input-bordered"
+              id="seacrch-input"
             />
-            <button class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white">
+            <button
+              class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white"
+              onclick="handleSearch()"
+            >
               Search
             </button>
           </label>
@@ -89,9 +93,14 @@
       </div>
 
       <!-- boxes -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 text-center" id="phone-container">
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 text-center"
+        id="phone-container"
+      >
         <!-- Mobile - 1 -->
-        <div class="border flex flex-col items-center max-w-xs px-4 py-2 gap-2 rounded-md text-[#403F3F]">
+        <!-- <div
+          class="border flex flex-col items-center max-w-xs px-4 py-2 gap-2 rounded-md text-[#403F3F]"
+        >
           <img src="./img/iphone-13.png" alt="" />
           <h2 class="text-2xl font-bold">Iphone 13 Pro Max</h2>
           <p class="text-[#706F6F]">
@@ -99,38 +108,18 @@
             have suffered
           </p>
           <p class="text-2xl font-bold">$999</p>
-          <button class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white my-2 text-lg font-semibold">
+          <button
+            class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white my-2 text-lg font-semibold"
+          >
             Show Details
           </button>
-        </div>
-        <!-- Mobile - 2 -->
-        <div class="border flex flex-col items-center max-w-xs px-4 py-2 gap-2 rounded-md text-[#403F3F]">
-          <img src="./img/iphone-13.png" alt="" />
-          <h2 class="text-2xl font-bold">Iphone 13 Pro Max</h2>
-          <p class="text-[#706F6F]">
-            There are many variations of passages of available, but the majority
-            have suffered
-          </p>
-          <p class="text-2xl font-bold">$999</p>
-          <button class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white my-2 text-lg font-semibold">
-            Show Details
-          </button>
-        </div>
-        <!-- Mobile - 3 -->
-        <div class="border flex flex-col items-center max-w-xs px-4 py-2 gap-2 rounded-md text-[#403F3F]">
-          <img src="./img/iphone-13.png" alt="" />
-          <h2 class="text-2xl font-bold">Iphone 13 Pro Max</h2>
-          <p class="text-[#706F6F]">
-            There are many variations of passages of available, but the majority
-            have suffered
-          </p>
-          <p class="text-2xl font-bold">$999</p>
-          <button class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white my-2 text-lg font-semibold">
-            Show Details
-          </button>
-        </div>
+        </div> -->
       </div>
-      <button class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white mt-8">
+      <button
+      onclick="handleShowAll"
+        class="btn bg-[#0D6EFD] hover:bg-[#0d6dfdda] text-white mt-8 hidden"
+        id="show-all"
+      >
         Show All
       </button>
     </main>
@@ -192,7 +181,6 @@
         </div>
       </div>
     </footer>
-
     <script src="./script.js"></script>
   </body>
 </html>
